@@ -1,0 +1,18 @@
+body{
+    width: 80%;
+    color: #444;
+    margin: auto;
+    font-size: 20px;
+}
+
+h1{
+    background-color: #fac877;
+    text-align: center;
+    color: #9f461f;
+}
+h2{
+    background-color: #c79090;
+    color: red;
+    border-bottom: solid 2px red;
+    padding: 10px;
+}
