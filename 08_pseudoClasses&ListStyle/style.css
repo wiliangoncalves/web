@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    color: green;
+}
+
+a:link{
+    color: green;
+}
+a:hover{
+    background-color: #ccc;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color: orange;
+}
+
+ul li{
+    list-style-type: square;
+}
+ol li{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
