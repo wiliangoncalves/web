@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+}
+
+/* Só os elementos nivel de bloco */
+h1, p, div, footer{
+    border: 3px solid red;
+}
+
+p{
+    width: 50%;
+    padding: 25px;
+}
+div{
+    margin: 50px;
+}
+
+/* só os elementos nivel de linha */
+
+b, em, a, span{
+    background-color: yellow;
+}
+em{
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    padding: 50px;
+    display: inline-block;
+}
+img, span{
+    display: block;
+}
