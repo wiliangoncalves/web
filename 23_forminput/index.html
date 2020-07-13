@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>FormInput</title>
+        <meta charset="utf-8">
+        <meta name="author" content="wilian goncalves">
+        <meta name="description" content="Input types form">
+        <meta name="keywords" content="html5, css, javascript, web, tecnology">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Form input</h1>
+
+        <form action="#" method="GET" class="formLogin">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label>Email</label>
+                <input type="email" autofocus>
+
+                <br>
+
+                <label>Número de filhos</label>
+                <input type="number" min="0" max="50">
+
+                <br>
+
+                <label>Nascimento</label>
+                <input type="date" min="2020-01-30" max="2140-01-30">
+
+                <br>
+
+                <p>Sexo:</p>
+                <label>Masculino
+                <input type="radio" name="sex" value="m"></label> <!-- Send to server: sex=m -->
+
+                <label>Feminino
+                <input type="radio" name="sex" value="f"></label> <!-- Send to server: sex=f -->
+
+                <br>
+
+                <input type="submit" value="mandar">
+            </fielset>
+        </form>
+    </body>
+</html>
