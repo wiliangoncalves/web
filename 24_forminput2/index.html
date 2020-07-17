@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Entrada de dados 2</title>
+        <meta charset="utf-8">
+        <meta name="author" content="wilian goncalves">
+        <meta name="description" content="Outros tipos de entrada de dados, html5">
+        <meta name="keywords" content="html5, css3, web, tecnologia">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Entrada de dados 2</h1>
+
+        <form action="#" method="POST" class="form">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required maxlength="10" placeholder="Digite um email válido" autofocus> *
+
+                <br>
+
+                <label for="filhos">Numero de filhos</label>
+                <input type="number" id="filhos">
+
+                <br>
+
+                <label for="nascimento">Nascimento</label>
+                <input type="date" min="2020-01-30" max="2040-01-30">
+
+                <br>
+
+                <p>Sexo:</p>
+                <label>Masculino
+                    <input type="radio" name="sex">
+                </label>
+
+                <label>Feminino
+                    <input type="radio" name="sex">
+                </label>
+
+                <br>
+
+                <input type="hidden" name="expira" value="2020-12-30"> <!-- Esconder uma informação -->
+
+                <br>
+
+                <label>Estado</label>
+                <select name="estado"> <!-- Servidor vai receber. estado=SP, estado=RJ, estado=SC -->
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="js" value="js">JavaScript
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Mensagem</legend>
+
+                <textarea name="msg" cols="30" rows="10" style="resize: none;" maxlength="100"></textarea>
+
+                <textarea name="contrato" cols="30" rows="10" style="resize: none;" readonly>Aqui entra o texto do contrato que precisa ser aceito
+                </textarea>
+
+                <label>
+                    <input type="checkbox" checked>Li e aceito
+                </label>
+
+                <input type="range" min="0" max="10" step=".2">
+                <input type="time">
+                <input type="color">
+
+                <select size="5" multiple>
+                    <option>opcao 1</option>
+                    <option>opcao 2</option>
+                    <option>opcao 3</option>
+                    <option>opcao 4</option>
+                    <option>opcao 5</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Mandar"> <!-- Vai enviar dados do formulário -->
+            <input type="button" value="botao"> <!-- Botão vazio, que pode ser tratado com JavaScript -->
+            <input type="reset" value="limpar tudo">
+        </form>
+    </body>
+</html>
