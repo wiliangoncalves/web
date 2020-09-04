@@ -1,0 +1,17 @@
+p::first-letter{
+    font-size: 3em;
+    line-height: 1;
+    margin-right: .1em;
+    float: left;
+}
+
+p::first-line{
+    color: red;
+}
+
+p::-moz-selection{
+    background-color: yellow;
+}
+p::selection{
+    background-color: yellow;
+}
