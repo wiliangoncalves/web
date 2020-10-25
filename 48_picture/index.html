@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Picture</title>
+        <meta charset="utf-8">
+        <meta name="author" content="wilian goncalves">
+        <meta name="description" content="Utilizando a tag picture, em html5">
+        <meta name="keywords" content="html5, css3, javascript, web, tecnologia, front-end, design">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <h1>Utilizando a tag Picture</h1>
+
+        <picture>
+            <source media="(min-width: 480px)" sizes="33vw" srcset="img/1280.jpg 1280w, img/960.jpg 960w, img/480.jpg 480w">
+            <source sizes="100vw" srcset="img/822_mob.jpg 822w, img/640_mob.jpg 640w, img/320_mob.jpg 320w">
+            <img src="img/1280.jpg" alt="Texto alternativo">
+        </picture>
+    </body>
+</html>
