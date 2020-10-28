@@ -1,0 +1,122 @@
+.flexbox{
+    height: 250px;
+    border: 1px solid red;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.flexbox div{
+    background-color: orange;
+    width: 300px;
+    margin: 15px;
+}
+
+.flexbox:nth-child(5){
+    flex-flow: row wrap;
+}
+
+.flexbox:nth-child(5){
+    justify-content: space-around;
+}
+
+.flexbox:nth-child(5) div{
+    width: 30px;
+}
+
+.flexbox:nth-child(6){
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox:nth-child(7){
+    align-items: baseline;
+    justify-content: center;
+}
+
+.flexbox:nth-child(8){
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.flexbox:nth-child(8) div{
+    width: 100px;
+}
+
+.flexbox:nth-child(9){
+    justify-content: center;
+    align-items: center;
+}
+.flexbox:nth-child(9) div{
+    background-color: yellow;
+    flex-basis: 50px;
+    height: 50px;
+}
+
+.flexbox:nth-child(10){
+    justify-content: center;
+    align-items: center;
+}
+.flexbox:nth-child(10) div{
+    background-color: yellow;
+    flex-basis: 50px;
+    height: 50px;
+}
+.flexbox:nth-child(10) div:nth-child(2){
+    flex-grow: 1;
+}
+.flexbox:nth-child(10) div:nth-child(4){
+    flex-grow: 1;
+}
+
+.flexbox:nth-child(11){
+    justify-content: center;
+    align-items: center;
+}
+.flexbox:nth-child(11) div{
+    background-color: yellow;
+    flex-basis: 50px;
+    height: 50px;
+}
+.flexbox:nth-child(11) div:nth-child(2){
+    flex-shrink: 1;
+}
+.flexbox:nth-child(11) div:nth-child(4){
+    /*flex-shrink: 1;*/
+    /* grow shrink basis */
+    flex: 1 0 100px;
+}
+
+.flexbox:nth-child(12) div:nth-child(2){
+    order: 3;
+}
+.flexbox:nth-child(12) div:nth-child(4){
+    order: 2;
+}
+.flexbox:nth-child(12) div:nth-child(3){
+    order: 4;
+}
+
+.flexbox:nth-child(13){
+    align-items: flex-start;
+}
+.flexbox:nth-child(13) div:nth-child(2){
+    align-items: flex-start;
+    align-self: flex-end;
+}
+.flexbox:nth-child(13) div:nth-child(3){
+    align-items: flex-start;
+    align-self: center;
+}
+.flexbox:nth-child(13) div:nth-child(1){
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.flexbox:nth-child(14){
+    justify-content: center;
+    flex-direction: column;
+}
+.flexbox:nth-child(14) div{
+    flex-basis: 60px; /* Vai ser WIDTH se o flex-direction for ROW, e Height se for Column */
+}
