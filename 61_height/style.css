@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+body, html, header{
+    height: 100%;
+}
+
+#externa{
+    background-color: yellow;
+    width: 80vw;
+    height: 80vh;
+}
+
+#interna{
+    width: 90%;
+    height: 80%;
+    background-color: orange;
+}
